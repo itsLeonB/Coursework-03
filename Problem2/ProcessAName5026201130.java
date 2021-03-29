@@ -7,7 +7,7 @@ public class ProcessAName5026201130 {
 		System.out.print("Type your name: ");
 		String name = input.nextLine();
 		int spaceIdx = name.indexOf(" ");
-		String lastName = name.substring(spaceIdx, name.length());
+		String lastName = name.substring(spaceIdx + 1, name.length());
 		String initial = name.substring(0, 1);
 		String newName = lastName + ", " + initial + ".";
 		System.out.println("Your name is: " + newName);
